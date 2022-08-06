@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+:root {
+  /* Font-Sizes */
+  --sm: 14px;
+  --sm-md: 16px;
+  --sm-link: 20px;
+  --md: 21px;
+  --md-lg: 24px;
+  --lg: 36px;
+  /* Line-height */
+  --lh-sm: 18px;
+  --lh-md: 24px;
+  --lh-md-lg: 32px;
+  --lh-lg: 48px;
+  /* Colors */
+  --black: #000000;
+  --white: #ffffff;
+  --btn-bgc: #181a54;
+  --green: #75e359;
+  --categories-bgc: #f2f2f2;
+  --link: rgb(110, 110, 248);
+  --color-header: #3f4e5d;
+  --color-footer: #2c3946;
+  --bgc-header: rgba(35, 33, 33, 0.421);
+  --search-bgc: rgba(255, 255, 255, 0.774);
+
+  --product-shadow: 0px 12px 17px rgba(0, 8, 29, 0.05),
+    0px 5px 22px rgba(0, 8, 29, 0.06), 0px 7px 8px rgba(0, 8, 29, 0.08);
+  /* Containers */
+  --x-large: 1230px;
+  --large: 992px;
+  --medium: 768px;
+  --small: 576px;
+  /* Container Screens */
+  --x-large-screen: 1140px;
+  --large-screen: 960px;
+  --medium-screen: 720px;
+  --small-screen: 540px;
+}
+/* Wrapper */
+.wrapper {
+  min-height: calc(100vh - 200px);
+}
+
+/* Containers */
+.container {
+  max-width: var(--x-large);
+  padding: 0 25px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: var(--x-large-screen);
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: var(--large-screen);
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: var(--medium-screen);
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: var(--small-screen);
+  }
+}
+
+/* Flex container   grid container */
+
+.flex__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.flex__cart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex__admin {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}

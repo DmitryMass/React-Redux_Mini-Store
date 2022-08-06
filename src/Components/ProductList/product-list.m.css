@@ -1,0 +1,22 @@
+.product__list {
+  gap: 8px;
+  margin: 0 -3px;
+  display: grid;
+  padding: 0 3px 3px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.product__item {
+  min-width: 139.5px;
+}
+
+@media screen and (max-width: 992px) {
+  .product__list {
+    grid-template-columns: repeat(2, minmax(139.5px, 1fr));
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .product__list {
+    grid-template-columns: repeat(1, minmax(139.5px, 1fr));
+  }
+}

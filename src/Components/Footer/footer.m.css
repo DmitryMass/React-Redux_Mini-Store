@@ -1,0 +1,27 @@
+.footer {
+  background: var(--color-footer);
+  min-height: 200px;
+  padding: 60px 0;
+}
+.footer__messengers > object {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__link {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: 0 5px;
+}
+.footer__link > object {
+  position: relative;
+  z-index: -1;
+}
+
+.footer__rights {
+  color: var(--white);
+  font-size: var(--sm);
+  padding-top: 25px;
+  text-align: center;
+}

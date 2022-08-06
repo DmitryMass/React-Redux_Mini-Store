@@ -1,0 +1,9 @@
+.filter {
+  flex: 0 0 100px;
+}
+.filter__category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}

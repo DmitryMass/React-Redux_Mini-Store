@@ -1,0 +1,35 @@
+.each__card {
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 7%);
+  padding: 30px;
+  margin: 60px 0;
+  background-color: var(--white);
+  gap: 60px;
+}
+.each__img_wrap {
+  max-width: 250px;
+}
+.each__img_wrap > img {
+  max-width: 100%;
+}
+.each__body {
+  padding: 25px;
+  max-width: 550px;
+}
+.each__title {
+  font-size: var(--md-lg);
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.each__btn {
+  margin-top: 50px;
+  gap: 10px;
+}
+.each__description,
+.each__price {
+  font-size: var(--sm-md);
+  line-height: var(--lh-sm);
+  font-weight: 500;
+}
