@@ -134,7 +134,7 @@ function updateCartItem(product, item, quantity) {
       title: product.title,
       count: 1,
       price: product.price,
-      img: product.img,
+      image: product.image,
     };
   }
 }

@@ -1,0 +1,9 @@
+.empty {
+  width: 100%;
+  text-align: center;
+  font-size: var(--sm-link);
+}
+.empty__text {
+  display: block;
+  margin: 20px 0;
+}

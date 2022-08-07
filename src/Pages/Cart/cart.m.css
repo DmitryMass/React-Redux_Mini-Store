@@ -1,7 +1,27 @@
 .shopping__cart {
   padding: 60px 0;
 }
+.card__info {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+}
 
 .shopping__total {
   text-align: right;
+}
+.card__info {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.card__title_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+  .shopping__cart {
+    padding: 20px 0;
+  }
 }

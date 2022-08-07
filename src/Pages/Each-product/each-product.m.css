@@ -19,6 +19,8 @@
 }
 .each__title {
   font-size: var(--md-lg);
+  line-height: var(--lh-md-lg);
+
   font-weight: 500;
   margin-bottom: 25px;
 }
@@ -30,6 +32,19 @@
 .each__description,
 .each__price {
   font-size: var(--sm-md);
-  line-height: var(--lh-sm);
+  line-height: var(--lh-md);
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .each__card {
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .each__img_wrap {
+    max-width: 160px;
+  }
 }

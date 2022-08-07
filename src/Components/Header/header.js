@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './header.m.css';
 
 import { PAGE_ROUTES } from '../Utils';
@@ -18,9 +18,11 @@ const Header = () => {
         <Link to={PAGE_ROUTES.HOME} className={styles.header__logo}>
           Jay-Store
         </Link>
-        <SearchPanel />
+        <div className={styles.header__search}>
+          <SearchPanel />
+        </div>
         <div className={styles.header__cart}>
-          <Link className={styles.header__cart_link} to={PAGE_ROUTES.CART}>
+          <Link to={PAGE_ROUTES.CART} className={styles.header__cart_link}>
             <i className="fa-solid fa-cart-arrow-down"></i>
             <span className={styles.header__count}>{sumOfCount}</span>
           </Link>

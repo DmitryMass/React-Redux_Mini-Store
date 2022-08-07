@@ -4,9 +4,24 @@
   grid-gap: 18px;
   grid-template-columns: 200px 1fr;
 }
-
+.home__search_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.home__search {
+  display: none;
+}
 @media screen and (max-width: 992px) {
   .home {
+    display: block;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .home__search {
     display: block;
   }
 }

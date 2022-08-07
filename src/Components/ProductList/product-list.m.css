@@ -13,6 +13,7 @@
   .product__list {
     grid-template-columns: repeat(2, minmax(139.5px, 1fr));
     justify-content: center;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 576px) {
