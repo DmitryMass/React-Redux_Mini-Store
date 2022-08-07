@@ -10,3 +10,6 @@ Mini store with: Products Page, Each Products Pages, Cart (only local), Search a
 2. Redux, Redux-Thunk (without using RTK)
 3. ModuleCSS
 4. Webpack/babel.
+
+Deploy Netlify
+https://jay-store.netlify.app/
